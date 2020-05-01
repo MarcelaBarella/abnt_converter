@@ -1,6 +1,6 @@
 def convert_to_abnt(name):
     LAST_NAMES = ['FILHO', 'FILHA', 'NETO', 'NETA', 'SOBRINHO', 'SOBRINHA', 'JUNIOR']
-    ARTICLES = ['do', 'da', 'dos', 'das', 'dos']
+    ARTICLES = ['do', 'da', 'dos', 'das']
 
     splited_name_capitalized = [x.capitalize() for x in name.split(' ') if x not in ARTICLES]
     if splited_name_capitalized and len(splited_name_capitalized) == 1:
